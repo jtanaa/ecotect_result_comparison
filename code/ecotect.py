@@ -1,8 +1,8 @@
 import re
 
 #type in the absolute path of two Ecotect result txt file.
-PATH_1 = r'C:\Users\tj371_000\Documents\ecotect_result_comparison\900.txt'
-PATH_2 = r'C:\Users\tj371_000\Documents\ecotect_result_comparison\1500.txt'
+PATH_1 = r''
+PATH_2 = r''
 ROW = 0 #The ROW and COLUMN has not been set yet. It will be parsed from user input file
 COLUMN = 0
 

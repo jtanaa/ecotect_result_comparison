@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import ttk
+from tkinter.filedialog import askopenfilename
 
 def calculate(*args):
     try:
@@ -28,6 +29,9 @@ ttk.Button(mainframe, text="Calculate", command=calculate).grid(column=3, row=3,
 ttk.Label(mainframe, text="feet!!").grid(column=3, row=1, sticky=W)
 ttk.Label(mainframe, text="is equivalent to").grid(column=1, row=2, sticky=E)
 ttk.Label(mainframe, text="meters").grid(column=3, row=2, sticky=W)
+
+filename = askopenfilename() 
+print(filename)
 
 for child in mainframe.winfo_children(): child.grid_configure(padx=5, pady=5)
 
